@@ -1,0 +1,58 @@
+{
+    "res_code":1,
+    "res_msg":"成功",
+    "res_body":{
+        "nav":[
+            {"name":"概况","path":"/overview","id":"1"},
+            {"name":"店铺","path":"/store","id":"2","subnav":[
+                {
+                  "name": "店铺装修",
+                  "path": "/store/decoration",
+                  "id": "2-1"
+                },
+                {
+                  "name": "微页面",
+                  "path": "/store/micropage",
+                  "id": "2-2"
+                },
+                {
+                  "name": "个人中心",
+                  "path": "/store/mine",
+                  "id": "2-3"
+                },
+                {
+                  "name": "地址管理",
+                  "path": "/store/address",
+                  "id": "2-4"
+                },
+                {
+                  "name": "支付方式",
+                  "path": "/store/pay",
+                  "id": "2-5"
+                },
+                {
+                  "name": "发布小程序",
+                  "path": "/store/applets",
+                  "id": "2-6"
+                },
+                {
+                  "name": "发布指南",
+                  "path": "/store/guide",
+                  "id": "2-7"
+                },
+                {
+                  "name": "手机CRM",
+                  "path": "/store/crm",
+                  "id": "2-8"
+                }
+              ]},
+            {"name":"商品","path":"/shop","id":"3"},
+            {"name":"订单","path":"/order","id":"4"},
+            {"name":"客户","path":"/client","id":"5"},
+            {"name":"数据","path":"/data","id":"6"},
+            {"name":"设置","path":"/setting","id":"7"},
+            {"name":"资产","path":"/property","id":"8"},
+            {"name":"营销","path":"/marketing","id":"9"}
+        ]
+    }
+}
