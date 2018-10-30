@@ -1,10 +1,13 @@
 <template>
 <div class="left-aside">
   <div @click="handlesubnav" class="nav">
-    <div class="logo"></div>
-    <div
+    <div class="logo">logo</div>
+    <router-link
+    class="nav-item"
+    tag="div"
     v-for="(item,index) in nav"
-    :key="index">{{item.name}}</div>
+    :to="item.path"
+    :key="index">{{item.name}}</router-link>
   </div>
   <div :class="{'on':show}" class="subnav">
     <div class="subnav-title"></div>
@@ -42,6 +45,22 @@ export default {
 <style lang="scss" scoped>
   .left-aside{
     display: flex;
+    .logo{
+      width: 100%;
+      height: 80px;
+      background: #09f;
+    }
+    .nav-item{
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    .nav-item:hover{
+      background: #fff;
+    }
     .nav{
       width: 100px;
       height: 100vh;

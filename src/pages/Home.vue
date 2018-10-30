@@ -45,6 +45,10 @@ export default {
   },
   created () {
     this.getnav()
+    let hashs = location.hash
+    let index = hashs.indexOf('/') + 1
+    let str = hashs.slice(index)
+    console.log(str)
   },
   beforeMount () {
 

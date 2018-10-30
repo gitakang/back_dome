@@ -13,21 +13,21 @@
         >短信验证登陆</div>
       </div>
       <form v-if="showActive" class="account-form">
-        <input type="text" placeholder="输入账号">
-        <input type="password" placeholder="输入密码">
+        <input type="text" v-model="username" placeholder="输入账号">
+        <input type="password" v-model="password" placeholder="输入密码">
         <div>
-          <label><input type="checkbox">记住密码</label>
+          <label><input v-model="remember" type="checkbox">记住密码</label>
           <router-link class="forget-password" to="">忘记密码？</router-link>
         </div>
       </form>
       <form v-else class="sms-form">
-          <input class="username" type="text" placeholder="输入账号">
+          <input class="username" type="text" placeholder="输入手机号">
           <div class="sms-code">
             <input class="smscode" type="text" placeholder="短信验证码">
             <div class="getcode">获取验证码</div>
           </div>
       </form>
-      <div class="btn-login">登录</div>
+      <div class="btn-login" @click="userLogin">登录</div>
       <div class="btn-register">注册</div>
       <div class="other-account"><span>第三方账户登录</span><span></span></div>
       <div class="login-icon">
@@ -56,12 +56,25 @@ export default {
   },
   data () {
     return {
-      showActive: true
+      showActive: true,
+      username: '',
+      password: '',
+      remember: true
     }
   },
   methods: {
     changeActive (code) {
       this.showActive = code === 1
+    },
+    userLogin () {
+      if (this.showActive) {
+        console.log(this.remember)
+        // let username = this.username
+        sessionStorage.setItem('user', this.username)
+        console.log(sessionStorage)
+      } else {
+        console.log(2)
+      }
     }
   }
 }

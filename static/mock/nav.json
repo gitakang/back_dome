@@ -45,7 +45,8 @@
                   "path": "/store/crm",
                   "id": "2-8"
                 }
-              ]},
+              ]
+            },
             {"name":"商品","path":"/shop","id":"3"},
             {"name":"订单","path":"/order","id":"4"},
             {"name":"客户","path":"/client","id":"5"},

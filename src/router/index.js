@@ -6,10 +6,14 @@ import Register from '@/pages/Register.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
+      redirect: 'home'
+    },
+    {
+      path: '/home',
       name: 'Home',
       component: Home
     },
@@ -25,3 +29,8 @@ export default new Router({
     }
   ]
 })
+router.beforeEach(function (to, from, next) {
+  console.log(sessionStorage.user)
+  next()
+})
+export default router
