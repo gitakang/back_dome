@@ -7,7 +7,8 @@ Vue.use(Vuex)
 const store = new Vuex.Store({
   state: {
     num: 123,
-    nav: []
+    nav: [],
+    subnav: []
   },
   mutations: {
     add (state) {
@@ -18,11 +19,15 @@ const store = new Vuex.Store({
     },
     GETNAV (state, arr) {
       state.nav = arr
+    },
+    GETSUBNAV (state, arr) {
+      console.log(state, arr)
     }
   },
   actions: {
     getNavs ({commit}) {
       axios.get('/static/mock/nav.json').then((res) => {
+        console.log(res)
         commit('GETNAV', res.data.res_body.nav)
       })
     }

@@ -47,7 +47,14 @@
                 }
               ]
             },
-            {"name":"商品","path":"/shop","id":"3"},
+            {"name":"商品","path":"/shop","id":"3","subnav":[
+              {"name":"所有商品","path":"/shop/all","id":"3-1"},
+              {"name":"热卖商品","path":"/shop/hot","id":"3-2"},
+              {"name":"下架商品","path":"/shop/out","id":"3-3"},
+              {"name":"管理商品","path":"/shop/run","id":"3-4"},
+              {"name":"添加商品","path":"/shop/add","id":"3-5"},
+              {"name":"商品库存","path":"/shop/stock","id":"3-6"}
+            ]},
             {"name":"订单","path":"/order","id":"4"},
             {"name":"客户","path":"/client","id":"5"},
             {"name":"数据","path":"/data","id":"6"},

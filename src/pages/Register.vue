@@ -39,10 +39,12 @@ export default {
   },
   methods: {
     userRegister () {
-      let users = JSON.parse(localStorage.getItem('users')) || []
+      let users = JSON.parse(localStorage.getItem('users')) || [0, 1, 2, 3]
       let {username, password, passwordRepeat} = this
+      console.log('1:' + users)
       if (username !== '' && password !== '' && passwordRepeat === password) {
         let userInfo = {'username': username, 'password': password}
+        console.log('123:' + users)
         localStorage.setItem('users', JSON.stringify(users.push(userInfo)))
       } else { console.log(false) }
     }
