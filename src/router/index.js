@@ -10,12 +10,23 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: 'home'
-    },
-    {
-      path: '/home',
       name: 'Home',
-      component: Home
+      redirect: '/overview',
+      component: Home,
+      children: [
+        {
+          path: '/overview',
+          component: () => import('../pages/overviwe/Overview.vue')
+        },
+        {
+          path: '/store',
+          component: () => import('../pages/store/decoration/decoration.vue')
+        },
+        {
+          path: '/shop',
+          component: () => import('../pages/shop/all/Allgoods.vue')
+        }
+      ]
     },
     {
       path: '/login',

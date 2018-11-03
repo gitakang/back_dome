@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'LeftAside',
   props: {
@@ -39,6 +40,11 @@ export default {
     handlesubnav () {
       this.show = !this.show
     }
+  },
+  created () {
+    axios.post('/randomnum').then(res => {
+      console.log(res)
+    })
   }
 }
 </script>

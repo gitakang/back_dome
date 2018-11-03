@@ -3,64 +3,104 @@
     "res_msg":"成功",
     "res_body":{
         "nav":[
-            {"name":"概况","path":"/overview","id":"1"},
+            {"name":"概况","path":"/overview","id":"1","subnav":[]},
             {"name":"店铺","path":"/store","id":"2","subnav":[
                 {
                   "name": "店铺装修",
                   "path": "/store/decoration",
-                  "id": "2-1"
+                  "id": "2-1",
+                  "headnav":[]
                 },
                 {
                   "name": "微页面",
                   "path": "/store/micropage",
-                  "id": "2-2"
+                  "id": "2-2",
+                  "headnav":[]
                 },
                 {
                   "name": "个人中心",
                   "path": "/store/mine",
-                  "id": "2-3"
+                  "id": "2-3",
+                  "headnav":[]
                 },
                 {
                   "name": "地址管理",
                   "path": "/store/address",
-                  "id": "2-4"
+                  "id": "2-4",
+                  "headnav":[]
                 },
                 {
                   "name": "支付方式",
                   "path": "/store/pay",
-                  "id": "2-5"
+                  "id": "2-5",
+                  "headnav":[]
                 },
                 {
                   "name": "发布小程序",
                   "path": "/store/applets",
-                  "id": "2-6"
+                  "id": "2-6",
+                  "headnav":[]
                 },
                 {
                   "name": "发布指南",
                   "path": "/store/guide",
-                  "id": "2-7"
+                  "id": "2-7",
+                  "headnav":[]
                 },
                 {
                   "name": "手机CRM",
                   "path": "/store/crm",
-                  "id": "2-8"
+                  "id": "2-8",
+                  "headnav":[]
                 }
               ]
             },
             {"name":"商品","path":"/shop","id":"3","subnav":[
-              {"name":"所有商品","path":"/shop/all","id":"3-1"},
-              {"name":"热卖商品","path":"/shop/hot","id":"3-2"},
-              {"name":"下架商品","path":"/shop/out","id":"3-3"},
-              {"name":"管理商品","path":"/shop/run","id":"3-4"},
-              {"name":"添加商品","path":"/shop/add","id":"3-5"},
-              {"name":"商品库存","path":"/shop/stock","id":"3-6"}
-            ]},
-            {"name":"订单","path":"/order","id":"4"},
-            {"name":"客户","path":"/client","id":"5"},
-            {"name":"数据","path":"/data","id":"6"},
-            {"name":"设置","path":"/setting","id":"7"},
-            {"name":"资产","path":"/property","id":"8"},
-            {"name":"营销","path":"/marketing","id":"9"}
+                {
+                  "name":"商品分类",
+                  "path":"/shop/categories",
+                  "id":"3-2",
+                  "headnav":[]
+                },
+                {
+                  "name":"店铺配置",
+                  "path":"/shop/storeconfig",
+                  "id":"3-3",
+                  "headnav":[]
+                
+                },
+                {
+                  "name":"桌号管理",
+                  "path":"/shop/tablenumber",
+                  "id":"3-4",
+                  "headnav":[]
+                },
+                {
+                  "name":"小排打印机",
+                  "path":"/shop/printer",
+                  "id":"3-5",
+                  "headnav":[]
+                },
+                {
+                  "name":"配送管理",
+                  "path":"/shop/distribution",
+                  "id":"3-6",
+                  "headnav":[]
+                },
+                {
+                  "name":"排队取号",
+                  "path":"/shop/queued",
+                  "id":"3-7",
+                  "headnav":[]
+                }
+              ]
+            },
+            {"name":"订单","path":"/order","id":"4","subnab":[]},
+            {"name":"客户","path":"/client","id":"5","subnab":[]},
+            {"name":"数据","path":"/data","id":"6","subnab":[]},
+            {"name":"设置","path":"/setting","id":"7","subnab":[]},
+            {"name":"资产","path":"/property","id":"8","subnab":[]},
+            {"name":"营销","path":"/marketing","id":"9","subnab":[]}
         ]
     }
 }

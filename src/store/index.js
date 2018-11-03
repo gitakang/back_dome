@@ -6,17 +6,10 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    num: 123,
     nav: [],
     subnav: []
   },
   mutations: {
-    add (state) {
-      state.num += 1
-    },
-    less (state) {
-      state.num--
-    },
     GETNAV (state, arr) {
       state.nav = arr
     },
