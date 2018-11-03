@@ -69,7 +69,6 @@ export default {
     userLogin () {
       if (this.showActive) {
         console.log(this.remember)
-        // let username = this.username
         sessionStorage.setItem('user', this.username)
         console.log(sessionStorage)
       } else {

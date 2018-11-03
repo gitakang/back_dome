@@ -5,7 +5,7 @@ import axios from 'axios'
 import App from './App'
 import store from './store'
 import router from './router'
-
+import './mock/mock'
 import './lib/css/reset.css'
 
 Vue.config.productionTip = false

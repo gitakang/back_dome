@@ -4,10 +4,7 @@
   <div id="main">
     <div id="header"></div>
     <div id="content">
-      <div class="text">{{count}}
-        <button @click="add">+</button>
-        <button @click="less">-</button>
-      </div>
+      <router-view></router-view>
     </div>
     <div id="bottom"></div>
   </div>
@@ -21,24 +18,14 @@ export default {
   name: '',
   data () {
     return {
-      msg: this.$store.state.num
     }
   },
   computed: {
     nav () {
       return this.$store.state.nav
-    },
-    count () {
-      return this.$store.state.num
     }
   },
   methods: {
-    add () {
-      this.$store.commit('add')
-    },
-    less () {
-      this.$store.commit('less')
-    },
     getnav () {
       this.$store.dispatch('getNavs')
     }
@@ -50,8 +37,13 @@ export default {
     let str = hashs.slice(index)
     console.log(str)
   },
-  beforeMount () {
-
+  mounted () {
+    console.log(this.$store.state.nav)
+  },
+  watch: {
+    $router (to, from) {
+      console.log(to.path)
+    }
   },
   components: {
     LeftAisde
