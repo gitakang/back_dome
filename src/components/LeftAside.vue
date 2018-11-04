@@ -1,6 +1,6 @@
 <template>
 <div class="left-aside">
-  <div @click="handlesubnav" class="nav">
+  <div class="nav">
     <div class="logo">logo</div>
     <router-link
     class="nav-item"
@@ -9,13 +9,13 @@
     :to="item.path"
     :key="index">{{item.name}}</router-link>
   </div>
-  <div :class="{'on':show}" class="subnav">
+  <div :class="{'on':subnav.length === 0}" class="subnav">
     <div class="subnav-title"></div>
     <div  class="subnav-box">
       <div
-      v-for="item in arr"
-      :key="item"
-      class="subnav-item">{{item}}</div>
+      v-for="item in subnav"
+      :key="item.id"
+      class="subnav-item"><span>{{item.name}}</span></div>
     </div>
   </div>
 </div>
@@ -25,26 +25,23 @@
 import axios from 'axios'
 export default {
   name: 'LeftAside',
-  props: {
-    nav: {
-      type: Array
-    }
-  },
   data () {
     return {
-      arr: [1, 2, 3, 4, 5, 6],
-      show: true
     }
   },
   methods: {
-    handlesubnav () {
-      this.show = !this.show
-    }
   },
   created () {
     axios.post('/randomnum').then(res => {
-      console.log(res)
     })
+  },
+  computed: {
+    nav () {
+      return this.$store.state.nav
+    },
+    subnav () {
+      return this.$store.state.subnav
+    }
   }
 }
 </script>
@@ -57,15 +54,16 @@ export default {
       background: #09f;
     }
     .nav-item{
-      height: 50px;
+      height: 70px;
       width: 100%;
       text-align: center;
       align-items: center;
-      line-height: 50px;
+      line-height: 70px;
       cursor: pointer;
     }
-    .nav-item:hover{
+    .router-link-active {
       background: #fff;
+      color: #09f;
     }
     .nav{
       width: 100px;
@@ -80,6 +78,18 @@ export default {
         height: 80px;
         width: 100%;
         background: #09f;
+      }
+      .subnav-box{
+        width: 100px;
+        .subnav-item{
+          height: 65px;
+          width: 100%;
+          text-align: center;
+          line-height: 65px;
+          span{
+            cursor: pointer;
+          }
+        }
       }
     }
     .on{

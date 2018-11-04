@@ -41,7 +41,6 @@ const router = new Router({
   ]
 })
 router.beforeEach(function (to, from, next) {
-  console.log(sessionStorage.user)
   next()
 })
 export default router

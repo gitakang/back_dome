@@ -95,12 +95,12 @@
                 }
               ]
             },
-            {"name":"订单","path":"/order","id":"4","subnab":[]},
-            {"name":"客户","path":"/client","id":"5","subnab":[]},
-            {"name":"数据","path":"/data","id":"6","subnab":[]},
-            {"name":"设置","path":"/setting","id":"7","subnab":[]},
-            {"name":"资产","path":"/property","id":"8","subnab":[]},
-            {"name":"营销","path":"/marketing","id":"9","subnab":[]}
+            {"name":"订单","path":"/order","id":"4","subnav":[]},
+            {"name":"客户","path":"/client","id":"5","subnav":[]},
+            {"name":"数据","path":"/data","id":"6","subnav":[]},
+            {"name":"设置","path":"/setting","id":"7","subnav":[]},
+            {"name":"资产","path":"/property","id":"8","subnav":[]},
+            {"name":"营销","path":"/marketing","id":"9","subnav":[]}
         ]
     }
 }

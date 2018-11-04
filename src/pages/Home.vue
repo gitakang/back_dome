@@ -18,6 +18,7 @@ export default {
   name: '',
   data () {
     return {
+
     }
   },
   computed: {
@@ -26,23 +27,18 @@ export default {
     }
   },
   methods: {
-    getnav () {
-      this.$store.dispatch('getNavs')
-    }
+
   },
   created () {
-    this.getnav()
-    let hashs = location.hash
-    let index = hashs.indexOf('/') + 1
-    let str = hashs.slice(index)
-    console.log(str)
+    let _href = location.hash.slice(1)
+    this.$store.dispatch('getNavs', _href)
   },
   mounted () {
-    console.log(this.$store.state.nav)
+
   },
   watch: {
-    $router (to, from) {
-      console.log(to.path)
+    $route (to, from) {
+      this.$store.commit('GETSUBNAV', this.$route.path)
     }
   },
   components: {
