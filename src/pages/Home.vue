@@ -61,7 +61,7 @@ export default {
     overflow: hidden;
     #header{
       width: 100%;
-      height: 80px;
+      height: 90px;
       background: white;
     }
     #content{

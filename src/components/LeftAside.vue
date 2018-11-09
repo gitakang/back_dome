@@ -1,7 +1,9 @@
 <template>
 <div class="left-aside">
   <div class="nav">
-    <div class="logo">logo</div>
+    <div class="logo">
+      <img @click="goToHome" src="../../static/img/logo.png">
+    </div>
     <router-link
     class="nav-item"
     tag="div"
@@ -10,7 +12,7 @@
     :key="index">{{item.name}}</router-link>
   </div>
   <div :class="{'on':subnav.length === 0}" class="subnav">
-    <div class="subnav-title"></div>
+    <div class="subnav-title">店铺管理</div>
     <div  class="subnav-box">
       <div
       v-for="item in subnav"
@@ -30,6 +32,9 @@ export default {
     }
   },
   methods: {
+    goToHome () {
+      this.$router.push('/overview')
+    }
   },
   created () {
     axios.post('/randomnum').then(res => {
@@ -48,10 +53,22 @@ export default {
 <style lang="scss" scoped>
   .left-aside{
     display: flex;
+    .nav{
+      width: 100%;
+      background: #4D4D4D;
+      font-size: 16px;
+    }
     .logo{
       width: 100%;
-      height: 80px;
-      background: #09f;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        img{
+          height: 70px;
+          width: 70px;
+          cursor: pointer;
+        }
     }
     .nav-item{
       height: 70px;
@@ -59,11 +76,13 @@ export default {
       text-align: center;
       align-items: center;
       line-height: 70px;
+      color: #FFFFFF;
       cursor: pointer;
+      font-size: 14px;
     }
     .router-link-active {
       background: #fff;
-      color: #09f;
+      color: #333;
     }
     .nav{
       width: 100px;
@@ -75,9 +94,13 @@ export default {
       background: white;
       transition: width 500ms;
       .subnav-title{
-        height: 80px;
+        color: #272525;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 90px;
+        height: 90px;
         width: 100%;
-        background: #09f;
       }
       .subnav-box{
         width: 100px;
@@ -86,6 +109,7 @@ export default {
           width: 100%;
           text-align: center;
           line-height: 65px;
+          font-size: 14px;
           span{
             cursor: pointer;
           }

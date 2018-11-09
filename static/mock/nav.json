@@ -9,53 +9,144 @@
                   "name": "店铺装修",
                   "path": "/store/decoration",
                   "id": "2-1",
-                  "headnav":[]
+                  "headnav":[
+                    {
+                      "name":"店铺装修",
+                      "path":"/store/decoration",
+                      "id":"1-1-1"
+                    },
+                    {
+                      "name":"更换皮肤",
+                      "path":"/store/decoration/skin",
+                      "id":"1-1-2"
+                    }
+                  ]
                 },
                 {
                   "name": "微页面",
                   "path": "/store/micropage",
                   "id": "2-2",
-                  "headnav":[]
+                  "headnav":[
+                    {
+                      "name":"微页面",
+                      "path":"/store/micropage",
+                      "id":"2-2-1"
+                    },
+                    {
+                      "name":"分类管理",
+                      "path":"/store/micropage/classification",
+                      "id":"2-2-2"
+                    }
+                  ]
                 },
                 {
                   "name": "个人中心",
                   "path": "/store/mine",
                   "id": "2-3",
-                  "headnav":[]
+                  "headnav":[
+                    {
+                      "name": "个人中心",
+                      "path": "/store/mine",
+                      "id": "2-3-1"
+                    }
+                  ]
+                },
+                {
+                  "name":"图片库",
+                  "path":"/store/picture",
+                  "id":"2-4",
+                  "subnav":[
+                    {
+                      "name":"图片库",
+                      "path":"/store/picture",
+                      "id":"2-4-1"
+                    }
+                  ]
                 },
                 {
                   "name": "地址管理",
                   "path": "/store/address",
-                  "id": "2-4",
-                  "headnav":[]
+                  "id": "2-5",
+                  "headnav":[
+                    {
+                      "name": "地址管理",
+                      "path": "/store/address",
+                      "id": "2-5-1"
+                    }
+                  ]
                 },
                 {
                   "name": "支付方式",
                   "path": "/store/pay",
-                  "id": "2-5",
-                  "headnav":[]
+                  "id": "2-6",
+                  "headnav":[
+                    {
+                      "name": "支付方式",
+                      "path": "/store/pay",
+                      "id": "2-6-1"
+                    }
+                  ]
                 },
                 {
                   "name": "发布小程序",
                   "path": "/store/applets",
-                  "id": "2-6",
-                  "headnav":[]
+                  "id": "2-7",
+                  "headnav":[
+                    {
+                      "name":"小程序配置",
+                      "path":"/store/applets/config",
+                      "id":"2-7-1"
+                    },
+                    {
+                      "name":"更新动态",
+                      "path":"/store/applets/upload",
+                      "id":"2-7-2"
+                    },
+                    {
+                      "name":"微信审核",
+                      "path":"/store/applets/examine",
+                      "id":"2-7-3"
+                    },
+                    {
+                      "name":"公众号授权",
+                      "path":"/store/applets/public",
+                      "id":"2-7-4"
+                    }
+                  ]
                 },
                 {
                   "name": "发布指南",
                   "path": "/store/guide",
-                  "id": "2-7",
-                  "headnav":[]
+                  "id": "2-8",
+                  "headnav":[
+                    {
+                      "name":"发布指南",
+                      "path":"/store/guide",
+                      "id":"2-8-1"
+                    }
+                  ]
                 },
                 {
                   "name": "手机CRM",
                   "path": "/store/crm",
-                  "id": "2-8",
-                  "headnav":[]
+                  "id": "2-9",
+                  "headnav":[
+                    {
+                      "name":"手机CRM",
+                      "path":"/store/crm",
+                      "id":"2-9-1"
+                    }
+                  ]
                 }
               ]
             },
             {"name":"商品","path":"/shop","id":"3","subnav":[
+              {
+                "name":"商品管理",
+                "path":"/shop/categories",
+                "id":"3-1",
+                "headnav":[]
+              },
                 {
                   "name":"商品分类",
                   "path":"/shop/categories",
@@ -95,12 +186,192 @@
                 }
               ]
             },
-            {"name":"订单","path":"/order","id":"4","subnav":[]},
-            {"name":"客户","path":"/client","id":"5","subnav":[]},
-            {"name":"数据","path":"/data","id":"6","subnav":[]},
-            {"name":"设置","path":"/setting","id":"7","subnav":[]},
-            {"name":"资产","path":"/property","id":"8","subnav":[]},
-            {"name":"营销","path":"/marketing","id":"9","subnav":[]}
+            {"name":"订单","path":"/order","id":"4","subnav":[
+              {
+                "name":"订单概况",
+                  "path":"/order/overview",
+                  "id":"4-1",
+                  "headnav":[]
+              },
+              {
+                "name":"所有订单",
+                  "path":"/order/all",
+                  "id":"4-2",
+                  "headnav":[]
+              },
+              {
+                "name":"活动订单",
+                  "path":"/order/activity",
+                  "id":"4-3",
+                  "headnav":[]
+              },
+              {
+                "name":"当面付",
+                  "path":"/order/facepay",
+                  "id":"4-4",
+                  "headnav":[]
+              },
+              {
+                "name":"评价管理",
+                  "path":"/order/evaluate",
+                  "id":"4-5",
+                  "headnav":[]
+              },
+              {
+                "name":"订单设置",
+                  "path":"/order/set",
+                  "id":"4-6",
+                  "headnav":[]
+              }
+              ]
+            },
+            {"name":"客户","path":"/customer","id":"5","subnav":[
+              {
+                  "name":"客户管理",
+                  "path":"/customer/manage",
+                  "id":"5-1",
+                  "headnav":[]
+              },
+              {
+                  "name":"用户表单",
+                  "path":"/customer/form",
+                  "id":"5-2",
+                  "headnav":[]
+              },
+              {
+                  "name":"会员管理",
+                  "path":"/customer/vip",
+                  "id":"5-3",
+                  "headnav":[]
+              },
+              {
+                  "name":"会员分组",
+                  "path":"/customer/group",
+                  "id":"5-4",
+                  "headnav":[]
+              },
+              {
+                  "name":"积分明细",
+                  "path":"/customer/integral",
+                  "id":"5-5",
+                  "headnav":[]
+              }
+              ]
+            },
+            {"name":"数据","path":"/data","id":"6","subnav":[
+              {
+                  "name":"概况趋势",
+                  "path":"/data/trend",
+                  "id":"6-1",
+                  "headnav":[]
+              },
+              {
+                  "name":"地区分布",
+                  "path":"/data/region",
+                  "id":"6-2",
+                  "headnav":[]
+              },
+              {
+                  "name":"用户统计",
+                  "path":"/data/user",
+                  "id":"6-3",
+                  "headnav":[]
+              },
+              {
+                  "name":"数据助手",
+                  "path":"/data/assistant",
+                  "id":"6-4",
+                  "headnav":[]
+              }
+              ]
+            },
+            {"name":"设置","path":"/setting","id":"7","subnav":[
+              {
+                "name":"模板信息",
+                  "path":"/setting/template",
+                  "id":"7-1",
+                  "headnav":[]
+              },
+              {
+                "name":"短信通知",
+                  "path":"/setting/sms",
+                  "id":"7-2",
+                  "headnav":[]
+              },
+              {
+                "name":"辅助提醒",
+                  "path":"/setting/remind",
+                  "id":"7-3",
+                  "headnav":[]
+              },
+              {
+                "name":"修改密码",
+                  "path":"/setting/queued",
+                  "id":"7-4",
+                  "headnav":[]
+              },
+              {
+                "name":"页面路径",
+                  "path":"/setting/route",
+                  "id":"7-5",
+                  "headnav":[]
+              },
+              {
+                "name":"核销员管理",
+                  "path":"/setting/salesperson",
+                  "id":"7-6",
+                  "headnav":[]
+              },
+              {
+                "name":"开放API",
+                  "path":"/setting/api",
+                  "id":"7-7",
+                  "headnav":[]
+              }
+              ]
+            },
+            {"name":"资产","path":"/property","id":"8","subnav":[
+              {
+                "name":"收支流水",
+                  "path":"/property/income",
+                  "id":"8-1",
+                  "headnav":[]
+              },
+              {
+                "name":"对账单",
+                  "path":"/property/bill",
+                  "id":"8-2",
+                  "headnav":[]
+              },
+              {
+                "name":"套餐管理",
+                  "path":"/property/setmeal",
+                  "id":"8-3",
+                  "headnav":[]
+              }
+              ]
+            },
+            {"name":"营销","path":"/marketing","id":"9","subnav":[
+              {
+                "name":"营销市场",
+                  "path":"/marketing/market",
+                  "id":"9-1",
+                  "headnav":[]
+              },
+              {
+                "name":"活动管理",
+                  "path":"/marketing/activity",
+                  "id":"9-2",
+                  "headnav":[]
+              },
+              {
+                "name":"数据统计",
+                  "path":"/marketing/statistics",
+                  "id":"9-3",
+                  "headnav":[]
+              }
+            ]
+          }
         ]
     }
 }

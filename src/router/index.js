@@ -1,8 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/pages/Home.vue'
-import Login from '@/pages/Login.vue'
-import Register from '@/pages/Register.vue'
+// 用户系统的路由
+import user from './user'
+// 店铺装修栏的路由
+import store from './store'
+// 商品栏的路由
+import shop from './shop'
+// 订单栏的路由
+import order from './order'
+// 客户栏的路由
+import customer from './customer'
+// 数据栏的路由
+import data from './data'
+// 设置栏的路由
+import set from './set'
+// 资产栏的路由
+import property from './property'
+// 营销栏的路由
+import marketing from './marketing'
 
 Vue.use(Router)
 
@@ -18,26 +34,18 @@ const router = new Router({
           path: '/overview',
           component: () => import('../pages/overviwe/Overview.vue')
         },
-        {
-          path: '/store',
-          component: () => import('../pages/store/decoration/decoration.vue')
-        },
-        {
-          path: '/shop',
-          component: () => import('../pages/shop/all/Allgoods.vue')
-        }
+        ...store,
+        ...shop,
+        ...order,
+        ...customer,
+        ...data,
+        ...set,
+        ...property,
+        ...marketing
       ]
     },
-    {
-      path: '/login',
-      name: 'Login',
-      component: Login
-    },
-    {
-      path: '/register',
-      name: 'Register',
-      component: Register
-    }
+    // 用户系统的路由
+    ...user
   ]
 })
 router.beforeEach(function (to, from, next) {

@@ -56,6 +56,7 @@ const store = new Vuex.Store({
     getNavs ({commit}, path) {
       axios.get('/static/mock/nav.json').then((res) => {
         const {nav} = res.data.res_body
+        console.log(nav)
         nav.push(path)
         commit('GETNAV', nav)
       })
