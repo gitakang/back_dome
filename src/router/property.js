@@ -1,6 +1,6 @@
 export default[
   {
-    path: '/property',
+    path: '/property/income/index',
     name: 'Income',
     component: () => import('../pages/property/income/Income.vue')
   }

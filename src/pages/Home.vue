@@ -2,7 +2,7 @@
 <div class="back-home">
   <Left-Aisde id="left-aside" :nav="nav"/>
   <div id="main">
-    <div id="header"></div>
+    <Header id="header"/>
     <div id="content">
       <router-view></router-view>
     </div>
@@ -14,6 +14,7 @@
 
 <script>
 import LeftAisde from '../components/LeftAside'
+import Header from '../components/Header'
 export default {
   name: '',
   data () {
@@ -42,7 +43,8 @@ export default {
     }
   },
   components: {
-    LeftAisde
+    LeftAisde,
+    Header
   }
 }
 </script>
@@ -76,7 +78,7 @@ export default {
   display: none;
 }
     #bottom{
-      height: 80px;
+      height: 70px;
       background: white;
     }
   }

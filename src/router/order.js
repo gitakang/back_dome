@@ -1,6 +1,6 @@
 export default [
   {
-    path: '/order',
+    path: '/order/overview/index',
     name: 'OrderOverview',
     component: () => import('../pages/order/overview/Overview.vue')
   }

@@ -1,6 +1,6 @@
 export default [
   {
-    path: '/data',
+    path: '/data/trend/index',
     name: 'Trend',
     component: () => import('../pages/data/trend/Trend.vue')
   }

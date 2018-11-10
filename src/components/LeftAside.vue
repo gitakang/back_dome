@@ -12,7 +12,7 @@
     :key="index">{{item.name}}</router-link>
   </div>
   <div :class="{'on':subnav.length === 0}" class="subnav">
-    <div class="subnav-title">店铺管理</div>
+    <div v-if="this.$store.state.title !== 'undefined'" class="subnav-title">{{this.$store.state.title}}</div>
     <div  class="subnav-box">
       <div
       v-for="item in subnav"
