@@ -15,7 +15,6 @@ export default {
   },
   computed: {
     headNav () {
-      console.log(this)
       return this.$store.state.headNav
     }
   }
@@ -31,14 +30,14 @@ export default {
     box-sizing: border-box;
     font-size: 14px;
     div{
-        margin-right: 80px;
+        margin-right: 3%;
         width: 80px;
         text-align: center;
         cursor: pointer;
         height: 50px;
         line-height: 50px;
     }
-    .active{
+    .router-link-active{
         color: #09f;
         position: relative;
         &:after{

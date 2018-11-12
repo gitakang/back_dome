@@ -31,7 +31,7 @@ const router = new Router({
       component: Home,
       children: [
         {
-          path: '/overview',
+          path: 'overview',
           component: () => import('../pages/overviwe/Overview.vue')
         },
         ...store,

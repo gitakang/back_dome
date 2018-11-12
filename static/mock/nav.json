@@ -3,10 +3,11 @@
     "res_msg":"成功",
     "res_body":{
         "nav":[
-            {"name":"概况","path":"/overview","id":"1","info":"","subnav":[]},
-            {"name":"店铺","path":"/store/decoration/index","id":"2","info":"店铺管理","subnav":[
+            {"name":"概况","active":false,"path":"/overview","id":"1","info":"","subnav":[]},
+            {"name":"店铺","active":false,"path":"/store/decoration/index","id":"2","info":"店铺管理","subnav":[
                 {
                   "name": "店铺装修",
+                  "active":false,
                   "path": "/store/decoration/index",
                   "id": "2-1",
                   "headnav":[
@@ -24,6 +25,7 @@
                 },
                 {
                   "name": "微页面",
+                  "active":false,
                   "path": "/store/micro/page",
                   "id": "2-2",
                   "headnav":[
@@ -41,6 +43,7 @@
                 },
                 {
                   "name": "个人中心",
+                  "active":false,
                   "path": "/store/mine/index",
                   "id": "2-3",
                   "headnav":[
@@ -53,6 +56,7 @@
                 },
                 {
                   "name":"图片库",
+                  "active":false,
                   "path":"/store/picture/index",
                   "id":"2-4",
                   "headnav":[
@@ -65,6 +69,7 @@
                 },
                 {
                   "name": "地址管理",
+                  "active":false,
                   "path": "/store/address/index",
                   "id": "2-5",
                   "headnav":[
@@ -77,6 +82,7 @@
                 },
                 {
                   "name": "支付方式",
+                  "active":false,
                   "path": "/store/pay/index",
                   "id": "2-6",
                   "headnav":[
@@ -89,6 +95,7 @@
                 },
                 {
                   "name": "发布小程序",
+                  "active":false,
                   "path": "/store/applets/config",
                   "id": "2-7",
                   "headnav":[
@@ -116,6 +123,7 @@
                 },
                 {
                   "name": "发布指南",
+                  "active":false,
                   "path": "/store/guide/index",
                   "id": "2-8",
                   "headnav":[
@@ -128,6 +136,7 @@
                 },
                 {
                   "name": "手机CRM",
+                  "active":false,
                   "path": "/store/crm/index",
                   "id": "2-9",
                   "headnav":[
@@ -140,9 +149,10 @@
                 }
               ]
             },
-            {"name":"商品","path":"/shop/categories/index","id":"3","info":"商品管理","subnav":[
+            {"name":"商品","active":false,"path":"/shop/categories/index","id":"3","info":"商品管理","subnav":[
                 {
                   "name":"商品管理",
+                  "active":false,
                   "path":"/shop/categories/index",
                   "id":"3-1",
                   "headnav":[
@@ -170,6 +180,7 @@
                 },
                   {
                     "name":"商品分类",
+                    "active":false,
                     "path":"/shop/categories/index",
                     "id":"3-2",
                     "headnav":[
@@ -182,6 +193,7 @@
                   },
                   {
                     "name":"店铺配置",
+                    "active":false,
                     "path":"/shop/storeconfig/index",
                     "id":"3-3",
                     "headnav":[
@@ -195,6 +207,7 @@
                   },
                   {
                     "name":"桌号管理",
+                    "active":false,
                     "path":"/shop/tablenumber/index",
                     "id":"3-4",
                     "headnav":[
@@ -207,6 +220,7 @@
                   },
                   {
                     "name":"小票打印机",
+                    "active":false,
                     "path":"/shop/printer/index",
                     "id":"3-5",
                     "headnav":[
@@ -224,6 +238,7 @@
                   },
                   {
                     "name":"配送管理",
+                    "active":false,
                     "path":"/shop/distribution/index",
                     "id":"3-6",
                     "headnav":[
@@ -246,6 +261,7 @@
                   },
                   {
                     "name":"排队取号",
+                    "active":false,
                     "path":"/shop/queued/index",
                     "id":"3-7",
                     "headnav":[
@@ -263,9 +279,10 @@
                   }
               ]
             },
-            {"name":"订单","path":"/order/overview/index","id":"4","info":"订单管理","subnav":[
+            {"name":"订单","active":false,"path":"/order/overview/index","id":"4","info":"订单管理","subnav":[
               {
                   "name":"订单概况",
+                  "active":false,
                   "path":"/order/overview/index",
                   "id":"4-1",
                   "headnav":[
@@ -278,6 +295,7 @@
               },
               {
                 "name":"所有订单",
+                  "active":false,
                   "path":"/order/overview/allorder",
                   "id":"4-2",
                   "headnav":[
@@ -325,6 +343,7 @@
               },
               {
                 "name":"活动订单",
+                  "active":false,
                   "path":"/order/activity/allorder",
                   "id":"4-3",
                   "headnav":[
@@ -372,6 +391,7 @@
               },
               {
                 "name":"当面付",
+                  "active":false,
                   "path":"/order/facepay/record",
                   "id":"4-4",
                   "headnav":[
@@ -389,6 +409,7 @@
               },
               {
                 "name":"评价管理",
+                  "active":false,
                   "path":"/order/facepay/evaluate",
                   "id":"4-5",
                   "headnav":[
@@ -406,6 +427,7 @@
               },
               {
                   "name":"订单设置",
+                  "active":false,
                   "path":"/order/set/index",
                   "id":"4-6",
                   "headnav":[
@@ -418,21 +440,23 @@
               }
               ]
             },
-            {"name":"客户","path":"/customer/manage/index","id":"5","info":"客户管理","subnav":[
+            {"name":"客户","active":false,"path":"/customer/manage/index","id":"5","info":"客户管理","subnav":[
               {
                   "name":"客户管理",
-                  "path":"/customer/manage/idnex",
+                  "active":false,
+                  "path":"/customer/manage/index",
                   "id":"5-1",
                   "headnav":[
                     {
                       "name":"客户管理",
-                      "path":"/customer/manage/idnex",
+                      "path":"/customer/manage/index",
                       "id":"5-1-1"
                     }
                   ]
               },
               {
                   "name":"用户表单",
+                  "active":false,
                   "path":"/customer/form/index",
                   "id":"5-2",
                   "headnav":[
@@ -445,6 +469,7 @@
               },
               {
                   "name":"会员管理",
+                  "active":false,
                   "path":"/customer/vip/index",
                   "id":"5-3",
                   "headnav":[
@@ -462,6 +487,7 @@
               },
               {
                   "name":"会员分组",
+                  "active":false,
                   "path":"/customer/group/index",
                   "id":"5-4",
                   "headnav":[
@@ -474,6 +500,7 @@
               },
               {
                   "name":"积分明细",
+                  "active":false,
                   "path":"/customer/integral/index",
                   "id":"5-5",
                   "headnav":[
@@ -486,21 +513,23 @@
               }
               ]
             },
-            {"name":"数据","path":"/data/trend/index","id":"6","info":"数据管理","subnav":[
+            {"name":"数据","active":false,"path":"/data/trend/index","id":"6","info":"数据管理","subnav":[
               {
                   "name":"概况趋势",
-                  "path":"/data/trend/idnex",
+                  "active":false,
+                  "path":"/data/trend/index",
                   "id":"6-1",
                   "headnav":[
                     {
                       "name":"概况趋势",
-                      "path":"/data/trend/idnex",
+                      "path":"/data/trend/index",
                       "id":"6-1-1"
                     }
                   ]
               },
               {
                   "name":"地区分布",
+                  "active":false,
                   "path":"/data/region/index",
                   "id":"6-2",
                   "headnav":[
@@ -513,6 +542,7 @@
               },
               {
                   "name":"用户统计",
+                  "active":false,
                   "path":"/data/user/index",
                   "id":"6-3",
                   "headnav":[
@@ -525,6 +555,7 @@
               },
               {
                   "name":"数据助手",
+                  "active":false,
                   "path":"/data/assistant/index",
                   "id":"6-4",
                   "headnav":[
@@ -537,15 +568,16 @@
               }
               ]
             },
-            {"name":"设置","path":"/setting/template/index","id":"7","info":"短信管理","subnav":[
+            {"name":"设置","active":false,"path":"/setting/template/index","id":"7","info":"短信管理","subnav":[
               {
                 "name":"模板信息",
-                  "path":"/setting/template/idnex",
+                  "active":false,
+                  "path":"/setting/template/index",
                   "id":"7-1",
                   "headnav":[
                     {
                       "name":"模板信息",
-                      "path":"/setting/template/idnex",
+                      "path":"/setting/template/index",
                       "id":"7-1-1"
                     },
                     {
@@ -562,6 +594,7 @@
               },
               {
                   "name":"短信通知",
+                  "active":false,
                   "path":"/setting/notice/index",
                   "id":"7-2",
                   "headnav":[
@@ -579,6 +612,7 @@
               },
               {
                 "name":"辅助提醒",
+                  "active":false,
                   "path":"/setting/remind/index",
                   "id":"7-3",
                   "headnav":[
@@ -591,6 +625,7 @@
               },
               {
                 "name":"修改密码",
+                  "active":false,
                   "path":"/setting/queued/index",
                   "id":"7-4",
                   "headnav":[
@@ -603,6 +638,7 @@
               },
               {
                 "name":"页面路径",
+                  "active":false,
                   "path":"/setting/route/index",
                   "id":"7-5",
                   "headnav":[
@@ -615,6 +651,7 @@
               },
               {
                 "name":"核销员管理",
+                  "active":false,
                   "path":"/setting/salesperson/index",
                   "id":"7-6",
                   "headnav":[
@@ -627,6 +664,7 @@
               },
               {
                 "name":"开放API",
+                  "active":false,
                   "path":"/setting/api/index",
                   "id":"7-7",
                   "headnav":[
@@ -639,21 +677,24 @@
               }
               ]
             },
-            {"name":"资产","path":"/property/income/index","id":"8","info":"资产管理","subnav":[
+            {"name":"资产","active":false,
+              "path":"/property/income/index","id":"8","info":"资产管理","subnav":[
               {
                 "name":"收支流水",
-                  "path":"/property/income/idnex",
+                  "active":false,
+                  "path":"/property/income/index",
                   "id":"8-1",
                   "headnav":[
                     {
                       "name":"收支流水",
-                      "path":"/property/income/idnex",
+                      "path":"/property/income/index",
                       "id":"8-1-1"
                     }
                   ]
               },
               {
                 "name":"对账单",
+                  "active":false,
                   "path":"/property/bill/index",
                   "id":"8-2",
                   "headnav":[
@@ -666,6 +707,7 @@
               },
               {
                 "name":"套餐管理",
+                  "active":false,
                   "path":"/property/setmeal/index",
                   "id":"8-3",
                   "headnav":[
@@ -678,21 +720,24 @@
               }
               ]
             },
-            {"name":"营销","path":"/marketing/market/index","id":"9","info":"营销推广","subnav":[
+            {"name":"营销","active":false,
+              "path":"/marketing/market/index","id":"9","info":"营销推广","subnav":[
               {
                 "name":"营销市场",
-                  "path":"/marketing/market/idnex",
+                  "active":false,
+                  "path":"/marketing/market/index",
                   "id":"9-1",
                   "headnav":[
                     {
                       "name":"营销市场",
-                      "path":"/marketing/market/idnex",
+                      "path":"/marketing/market/index",
                       "id":"9-1-1"
                     }
                   ]
               },
               {
                 "name":"活动管理",
+                  "active":false,
                   "path":"/marketing/activity/index",
                   "id":"9-2",
                   "headnav":[
@@ -705,6 +750,7 @@
               },
               {
                 "name":"数据统计",
+                  "active":false,
                   "path":"/marketing/statistics/index",
                   "id":"9-3",
                   "headnav":[

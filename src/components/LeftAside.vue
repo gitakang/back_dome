@@ -4,19 +4,22 @@
     <div class="logo">
       <img @click="goToHome" src="../../static/img/logo.png">
     </div>
-    <router-link
+    <div
+
+    v-for="item in nav"
     class="nav-item"
-    tag="div"
-    v-for="(item,index) in nav"
-    :to="item.path"
-    :key="index">{{item.name}}</router-link>
+    :class="{active:item.active}"
+    @click="jumpRouteToSubNav(item.path)"
+    :key="item.id">{{item.name}}</div>
   </div>
   <div :class="{'on':subnav.length === 0}" class="subnav">
-    <div v-if="this.$store.state.title !== 'undefined'" class="subnav-title">{{this.$store.state.title}}</div>
+    <div v-if="this.$store.state.title !== 'undefined'" class="subnav-title"><div>{{this.$store.state.title}}</div></div>
     <div  class="subnav-box">
       <div
       v-for="item in subnav"
       :key="item.id"
+      exact
+      @click="jumpRouteToHeadNav(item.path,item.id)"
       class="subnav-item"><span>{{item.name}}</span></div>
     </div>
   </div>
@@ -34,6 +37,12 @@ export default {
   methods: {
     goToHome () {
       this.$router.push('/overview')
+    },
+    jumpRouteToHeadNav (url, id) {
+      this.$router.push(url)
+    },
+    jumpRouteToSubNav (url) {
+      this.$router.push(url)
     }
   },
   created () {
@@ -80,7 +89,7 @@ export default {
       cursor: pointer;
       font-size: 14px;
     }
-    .router-link-active {
+    .active {
       background: #fff;
       color: #333;
     }
@@ -101,6 +110,9 @@ export default {
         line-height: 90px;
         height: 90px;
         width: 100%;
+        div{
+          width: 90px;
+        }
       }
       .subnav-box{
         width: 100px;
